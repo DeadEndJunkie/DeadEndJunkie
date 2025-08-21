@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dead End Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a2e;
+            color: #e5e5e5;
+            background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"%3E%3Cpath fill="%231a1a2e" fill-opacity="1" d="M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,85.3C672,75,768,85,864,106.7C960,128,1056,160,1152,181.3C1248,203,1344,213,1392,218.7L1440,224V320H1392C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320H0V64Z"%3E%3C/path%3E%3C/svg%3E') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent);
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .post {
+            background-color: rgba(26, 26, 46, 0.8);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            border: 1px solid #333;
+        }
+        .post h2 {
+            color: #f4d35e;
+            margin-top: 0;
+            text-shadow: 1px 1px 3px #000;
+        }
+        .post p {
+            line-height: 1.6;
+            color: #e5e5e5;
+        }
+        /* Heavenly light effect */
+        .light {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
+            transform: translateX(-50%);
+            z-index: -1;
+            animation: glow 5s infinite alternate;
+        }
+        @keyframes glow {
+            0% { opacity: 0.3; }
+            100% { opacity: 0.7; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="light"></div>
+        <h1>Dead End Blog</h1>
+    </header>
+    <div class="post">
+        <h2>First Journey</h2>
+        <p>Posted on August 20, 2025. Stepping into the shadows of this dead end, I found a glimmer of hope under the heavenly light. Join me as I explore the unknown.</p>
+    </div>
+    <div class="post">
+        <h2>Second Reflection</h2>
+        <p>Posted on August 20, 2025. The street whispers secrets, and the light guides me. Today, I ponder the paths not taken.</p>
+    </div>
+</body>
+</html>
